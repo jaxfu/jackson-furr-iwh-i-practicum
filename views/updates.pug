@@ -7,6 +7,9 @@ html
 
     form(action="/update-cobj" method="POST")
       div
+        label(for="name") Model Number:
+        input(type="number" name="model_number" id="model_number" required)
+      div
         label(for="name") Name:
         input(type="text" name="name" id="name" required)
       div
