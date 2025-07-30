@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Create Computer
+  body
+    h1 Create a Computer
+
+    form(action="/update-cobj" method="POST")
+      div
+        label(for="name") Model Number:
+        input(type="number" name="model_number" id="model_number" required)
+      div
+        label(for="name") Name:
+        input(type="text" name="name" id="name" required)
+      div
+        label(for="ram") RAM (GB):
+        input(type="number" name="ram" id="ram" min="0" required)
+      div
+        label(for="storage") Storage (GB):
+        input(type="number" name="storage" id="storage" min="0" required)
+      div
+        button(type="submit") Submit
+
+    br
+    a(href="/") Return to homepage

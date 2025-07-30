@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Computers
+    style.
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+  body
+    h1 Computers
+    table
+      thead
+        tr
+          th Model Number
+          th Name
+          th RAM
+          th Storage
+      tbody
+        each computer in data
+          tr
+            td= computer.properties.model_number
+            td= computer.properties.name
+            td= computer.properties.ram
+            td= computer.properties.storage
+
+
+    a(href="/update-cobj") Add to this table
+
